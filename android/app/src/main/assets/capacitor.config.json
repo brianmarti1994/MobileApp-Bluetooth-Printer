@@ -1,0 +1,13 @@
+{
+  "appId": "com.bluetoothionic.starter",
+  "appName": "BluetoothPrinter",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www",
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 0
+    }
+  },
+  "cordova": {}
+}

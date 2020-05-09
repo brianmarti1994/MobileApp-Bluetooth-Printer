@@ -1,5 +1,7 @@
 {
   "name": "BluetoothPrinter",
-  "integrations": {},
+  "integrations": {
+    "capacitor": {}
+  },
   "type": "angular"
 }

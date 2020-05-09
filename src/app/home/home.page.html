@@ -7,14 +7,15 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+  <ion-list>
+    <ion-item *ngFor="let item of bluetoothList" (click)="selectPrinter(item.id)">
+        {{item.name}} {{item.id}}
+    </ion-item>
+    </ion-list>
+    <div>
+        Selected Printer: {{selectedPrinter}}
+    </div>
+    <ion-button expand="full" color="danger" *ngIf='selectedPrinter' (click)="printStuff()">
+    PRINT!
+    </ion-button>
 </ion-content>
